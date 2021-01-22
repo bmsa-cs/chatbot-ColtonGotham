@@ -9,6 +9,7 @@ import importlib.util
 import random
 import time
 
+
 def run_tests():
   """
   This function will check for the pytest module
@@ -89,6 +90,7 @@ def main():
     print ("Computer: ", computer_score)
     print ("Player: ", player_score)
 
+  
 
   #Chatbot 
   name = input("Konichiwa! What is your name?\n")
@@ -173,6 +175,11 @@ def main():
   else:
     print (f"Okay so if you were born in {age} you are either a zombie or a time traveler?!")
   
+
+
+
+
+
   color = input("\nWhat is your favorite color?\n").lower
 
   if color == ("red"):
@@ -198,46 +205,31 @@ def main():
   else:
     print (f"If your color is {color} then I am not familer with that color\n")
 
+  activity = input("What would like to do?\n\nDo you want to play a game?\n").lower()
 
+  activity_game = ["yes", "y"]
 
-
-
-
-  
-
-  
-
-
-
-
-  
-  #Demo of a activity questions:
-#_________________________________________________________________________
-  #activity = input("What would like to do?\n\nDo you want to play a game, see a art piece, or neither?\n").lower()
-
-  #activity_game = ["game", "play a game", "a", "1"]
-
-  #activity_art = ["art", "art piece", "b", "2"]
-
-  #if activity in activity_RPSD:
-  #  start()
- # elif activity in activity_:
+  if activity in activity_game:
+    if __name__ == '__main__':
+      start()
     
-  #else:
-   # print("Well then what do you want to do?")
-#________________________________________________________________________
+  else:
+    print("Well then...")
 
+  print (f"Thank you for talking to me {name}")
 
+  good_reaction = ["good","okay","pretty good","great", "amazing","awesome", "wonderful"]
 
+  bad_reaction = ["bad", "not great", "horrible", "eh", "boring","meh"]
 
-  
+  conclusion = input("So how do you think this conversation went?").lower
 
-    
-
-  
-  
-
-
+  if conclusion in good_reaction:
+    print (f"I am very glad that you agree with me that it was {conclusion} well bye then")
+  elif conclusion in bad_reaction:
+    print ("Oh... I am sorry well bye then")
+  else: 
+    print ("I see well bye then")
 
 
 
